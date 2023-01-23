@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Website Parallax</title>
+</head>
+<body>
+    <header id="header">
+        <a href="" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="txt">Hello Winter</h2>
+        <img src="./imagens/monutain_01.png" id="m1">
+        <img src="./imagens/monutain_02.png" id="m2">
+        <img src="./imagens/monutain_03.png" id="m3">
+        <img src="./imagens/monutain_04.png" id="m4">
+        <img src="./imagens/trees.png" id="tr">
+        <img src="./imagens/cable_cars.png" id="crs">
+        <img src="./imagens/house.png" id="house">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti sed excepturi dignissimos! Consequatur, fugit quia, exercitationem laboriosam et excepturi minus sequi nam iste iusto ad itaque minima aperiam beatae?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sit itaque vero a dignissimos, rem at alias inventore harum earum, facilis blanditiis nemo ipsum accusantium odio ab delectus voluptate esse. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor omnis id pariatur accusantium fugiat velit, consectetur cum numquam sunt vel, repellendus illum natus temporibus reiciendis recusandae alias. Dignissimos, tenetur corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet alias placeat eveniet autem quos, sint officia libero rerum id beatae tempora nihil suscipit eligendi laudantium sed est. Recusandae, fugit minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas laboriosam nam similique, reprehenderit blanditiis perferendis. Facilis distinctio beatae deleniti exercitationem? Laborum eveniet adipisci cupiditate. Non quasi numquam placeat aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nulla ab iste corrupti assumenda doloremque laborum aut fuga consequatur nisi fugit unde, at reprehenderit impedit ut suscipit nemo quis ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur dolorum voluptate temporibus doloribus at corporis veniam aliquam praesentium distinctio, maiores, unde tempore quasi nulla, impedit blanditiis. Tempore, commodi laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magnam tempore labore minus, adipisci unde quae quo magni reprehenderit et atque laborum voluptate nemo voluptates facilis pariatur! Iure, laborum nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur reiciendis consectetur itaque at, nemo molestiae optio, possimus dolor vitae magnam atque eaque quisquam ipsum, enim rem corrupti! Impedit, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore et iste explicabo id quos nesciunt soluta, adipisci assumenda illum. Earum iure, laborum odit nam doloremque hic quis exercitationem quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quaerat eligendi sunt nesciunt dolores quis quos consectetur suscipit in non saepe, ullam commodi amet assumenda dolor animi iure. Quo, mollitia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati provident distinctio beatae voluptates, blanditiis est dolor! Nobis dicta neque quisquam quasi odit, sapiente adipisci, sed consequatur provident quod aperiam voluptates.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel sint velit quisquam voluptates autem veritatis nostrum nesciunt totam neque. Nobis aliquam placeat, fuga quae natus eaque vitae temporibus earum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem nemo, reprehenderit perferendis temporibus nihil quisquam eligendi ipsum laudantium sint doloribus expedita consequatur, fugit cumque, quae officiis. Cupiditate, unde ad. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quae ut sapiente atque doloremque eum deleniti voluptates dignissimos consequuntur itaque maiores commodi ab, maxime eligendi quos tempore et, ad quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus veritatis aspernatur reiciendis numquam tempore at, exercitationem saepe alias eius repudiandae odit sunt nemo laborum perspiciatis magni reprehenderit minus accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at rerum et, soluta molestias voluptas omnis hic inventore unde, natus voluptatem corrupti beatae alias saepe nemo sed explicabo possimus aperiam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente alias distinctio ab, vero qui deleniti iure ex consectetur! Eveniet eos et ea consequuntur debitis dignissimos praesentium impedit neque corrupti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam enim sapiente dignissimos officia placeat quos tenetur corporis delectus ipsam. Maiores animi aliquid inventore hic laboriosam accusamus tempore natus placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque labore fugiat provident molestias iste expedita voluptates aperiam iure. Ipsa dolores sapiente quibusdam dolor consequatur laborum aut, commodi hic vel quaerat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam at accusamus maxime obcaecati nisi, dignissimos quia delectus consequuntur quos ipsam qui fugit et animi inventore necessitatibus, porro officia aperiam eaque!</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#txt", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 350,
+        })
+        gsap.from("#m1", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#m2", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        })
+        gsap.from("#m3", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 200,
+        })
+        gsap.from("#m4", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#tr", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#crs", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 100,
+        })
+        gsap.from("#house", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        })
+    </script>
+</body>
+</html>
